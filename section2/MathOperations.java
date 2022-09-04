@@ -32,6 +32,14 @@ public class MathOperations {
 
         System.out.println("Snape made an error on his excel, accidentally multiplying Ron's score to: " + (bonusMarks * testScore ) + " /10");
 
+        // 4 
+
+        System.out.println("Originally, Fred had " + (bagOfSweets2 / bagOfSweets1) + " times more sweets than George");
+
+        System.out.println("Andromeda has " + (starsInAndomeda / starsInMilkyWay) + " times more stars.");
+
+        System.out.println("Snape caught the error. Furious, he divided Ron's score to: " + (testScore / bonusMarks));
+
 
     }
 
