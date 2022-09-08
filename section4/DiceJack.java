@@ -4,9 +4,9 @@ public class DiceJack{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        // int roll1 = rollDice();
-        // int roll2 = rollDice();
-        // int roll3 = rollDice();
+        int roll1 = rollDice();
+        int roll2 = rollDice();
+        int roll3 = rollDice();
 
         System.out.println("Enter three numbers between 1 and 6");
 
@@ -28,6 +28,12 @@ public class DiceJack{
         int sumDiceRolls = roll1 + roll2 + roll3;
         System.out.println("Dice sum = " + sumDiceRolls + ". Number sum = " + sumOfNumbers );
 
+        if (checkWin(sumDiceRolls,sumOfNumbers)) {
+            System.out.println("You Win!");
+        } else {
+            System.out.println("You Lose!");
+        }
+
         scan.close();
 
        
@@ -37,6 +43,11 @@ public class DiceJack{
         double random = Math.random() * 6;
         random += 1;
         return (int)random;
+    }
+
+    public static boolean checkWin(int sumDiceRolls, int sumOfNumbers) {
+
+        return ((sumOfNumbers > sumDiceRolls) && (sumDiceRolls - sumDiceRolls) < 3);
     }
 
 }
