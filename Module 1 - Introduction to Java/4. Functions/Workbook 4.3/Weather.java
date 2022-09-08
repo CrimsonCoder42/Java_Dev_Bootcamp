@@ -6,11 +6,16 @@ public class Weather {
 
         //Task 3 - Call the printTemperatures function. 
         
-        
+        printTemperatures(90);
     }
 
 
     //Task 1: Make a function here. See the doc comments below. 
+
+    public static double fahrenheitToCelsius(double fahrenheit) {
+        
+        return ((fahrenheit - 32) * 5/9);
+    };
 
     /**
      * Function name: fahrenheitToCelsius - converts fahrenheit to celcius
@@ -23,7 +28,11 @@ public class Weather {
 
      
     //Task 2: Make a function here. See the doc comments below. 
+    public static void printTemperatures(double fahrenheit) {
 
+        System.out.println(fahrenheit + " " + fahrenheitToCelsius(fahrenheit));
+
+    };
     /**
      * Function name: printTemperatures – prints both temperature values. 
      * @param fahrenheit (double)
