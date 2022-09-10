@@ -12,4 +12,5 @@ public class Detention {
             System.out.println(shouldWrite + " " + i);
         }
     }
+    scan.close();
 }
