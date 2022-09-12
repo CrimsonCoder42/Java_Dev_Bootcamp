@@ -12,6 +12,18 @@ public class FizzBuzz {
 
          */
 
+         for (int i = 0; i <= 16; i++) {
+             if(i % 3 == 0 && i % 5 == 0) {
+                System.out.println(i + " FizzBuzz");
+             } else if (i % 3 == 0) {
+                System.out.println(i + " Fizz");
+             } else if (i % 5 == 0) {
+                System.out.println(i + " Buzz");
+             } else {
+                System.out.println(i);
+             }
+         }
+
         /* Hints:
             If a number is a multiple of X, the remainder is zero when you divide that number by X. 
             There are three conditions for Fizz, Buzz, and FizzBuzz. Be careful about their order. If something is FizzBuzz, it can also be Fizz or Buzz. 
